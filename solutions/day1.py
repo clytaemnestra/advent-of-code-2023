@@ -12,7 +12,7 @@ def part1():
                     last = l
             number = str(first) + str(last)
             sum += int(number)
-        return sum
+        return print(sum)
 
 
 def part2():
