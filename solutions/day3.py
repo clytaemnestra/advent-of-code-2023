@@ -116,7 +116,7 @@ def calculate_part_two():
                     for i in set(nums):
                         result *= i
                     m.append(result)
-    return print(sum(m))
+    return sum(m)
 
 
 calculate_part_one()
