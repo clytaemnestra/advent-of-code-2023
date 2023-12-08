@@ -22,7 +22,7 @@ def compare_hands(hand1, hand2):
     for card1, card2 in zip(hand1, hand2):
         if strength.index(card1) != strength.index(card2):
             return strength.index(card1) > strength.index(card2)
-    return False
+    return
 
 
 def sort_hands(sorted_hands):
