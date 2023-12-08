@@ -3,6 +3,7 @@ import multiprocessing
 import time
 import concurrent.futures
 
+
 def extract(data, map_name):
     map_pattern = r"(\d+)\s+(\d+)\s+(\d+)"
     map_data = re.findall(f"{map_name} map:\n(({map_pattern}\n?)+)", data)
@@ -107,7 +108,6 @@ def read_data2():
     seed_pattern = r"seeds: ([\d\s]+)"
     map_pattern = r"(\d+)\s+(\d+)\s+(\d+)"
     seeds = [int(seed) for seed in re.search(seed_pattern, data).group(1).split()]
-
 
     seed_data = [(seeds[i], seeds[i + 1]) for i in range(0, len(seeds), 2)]
 
